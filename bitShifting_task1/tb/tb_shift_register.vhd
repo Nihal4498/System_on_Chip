@@ -21,31 +21,33 @@ architecture arch of shift_register_clk_tb is
     );
 	end component;
 	
-	for dut: shift_register_clk use entity work.shift_register_clk(arch);
+	--for dut: shift_register_clk use entity work.shift_register_clk(arch);
 	
-	SIGNAL button1, button2 : STD_LOGIC;
-	SIGNAL clk	:	STD_LOGIC;
-	SIGNAL q_reg 	:	STD_LOGIC_VECTOR(7 DOWNTO 0);
+	SIGNAL button1_s, button2_s : STD_LOGIC;
+	SIGNAL clk_s	:	STD_LOGIC;
+	SIGNAL q_reg_s 	:	STD_LOGIC_VECTOR(7 DOWNTO 0);
 	
 begin
     
     -- shift_register testing with clock pulse
-    port map (clk => clock, button1=>B1,button2=>B2,
-                    q_reg=>LEDR);
-					
+	dut: shift_register_clk
+	port map (clk_s, button1_s, button2_s , q_reg_s);
+	--port map (clock => clk_s, B1=>button1_s, B2=>button2_s, LEDR=>q_reg_s);
 	stimuli: process begin
 	wait for 10 ns;
-	button1 <= '1';
+	button1_s <= '1';
 	end process;
 	
 end arch;
 
-USE work.all;
+use work.all;
 
 configuration cfg_shift_register_clk_tb of shift_register_clk_tb is
 	for arch
 		for dut : shift_register_clk
-			use entity work.shift_register_clk(arch);
+			use entity work.shift_register_clk(arch)
+			port map (clk => clock, button1 => B1, button2 => B2, q_reg => LEDR);
+			--port map (clock => clk, B1=>button1, B2=>button2, LEDR=>q_reg);
 		end for;
 	end for;
 end cfg_shift_register_clk_tb;
