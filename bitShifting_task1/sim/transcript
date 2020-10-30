@@ -1,0 +1,763 @@
+do ../script
+# Cannot open macro file: ../script
+do ../script/script.do
+# compilation started!
+# Compile Toplevel...
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:54:18 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../src/shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk
+# -- Compiling architecture arch of shift_register_clk
+# End time: 14:54:19 on Oct 30,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:54:19 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../tb/tb_shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk_tb
+# -- Compiling architecture arch of shift_register_clk_tb
+# -- Loading entity shift_register_clk
+# ** Error: ../tb/tb_shift_register.vhd(28): (vcom-1136) Unknown identifier "clock".
+# ** Error: ../tb/tb_shift_register.vhd(28): (vcom-1136) Unknown identifier "B1".
+# ** Error: ../tb/tb_shift_register.vhd(28): (vcom-1136) Unknown identifier "B2".
+# ** Error: ../tb/tb_shift_register.vhd(29): (vcom-1136) Unknown identifier "LEDR".
+# ** Error: ../tb/tb_shift_register.vhd(32): near "wait": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Error: ../tb/tb_shift_register.vhd(33): Illegal target for signal assignment.
+# ** Error: ../tb/tb_shift_register.vhd(33): (vcom-1136) Unknown identifier "button1".
+# ** Error: ../tb/tb_shift_register.vhd(34): near "process": (vcom-1576) expecting ';'.
+# End time: 14:54:19 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 8, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./../script/script.do line 21
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -work work ../tb/tb_shift_register.vhd"
+do ../script/script.do
+# compilation started!
+# Library work already exists !!!
+# Compile Toplevel...
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:55:49 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../src/shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk
+# -- Compiling architecture arch of shift_register_clk
+# End time: 14:55:49 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:55:49 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../tb/tb_shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk_tb
+# -- Compiling architecture arch of shift_register_clk_tb
+# ** Error: ../tb/tb_shift_register.vhd(29): (vcom-1136) Unknown identifier "clock".
+# ** Error: ../tb/tb_shift_register.vhd(29): (vcom-1136) Unknown identifier "B1".
+# ** Error: ../tb/tb_shift_register.vhd(29): (vcom-1136) Unknown identifier "B2".
+# ** Error: ../tb/tb_shift_register.vhd(30): (vcom-1136) Unknown identifier "LEDR".
+# ** Error: ../tb/tb_shift_register.vhd(29): (vcom-1484) Unknown formal identifier "clk".
+# ** Error: ../tb/tb_shift_register.vhd(29): (vcom-1484) Unknown formal identifier "button1".
+# ** Error: ../tb/tb_shift_register.vhd(29): (vcom-1484) Unknown formal identifier "button2".
+# ** Error: ../tb/tb_shift_register.vhd(30): (vcom-1484) Unknown formal identifier "q_reg".
+# ** Error: ../tb/tb_shift_register.vhd(33): near "wait": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Error: ../tb/tb_shift_register.vhd(34): Illegal target for signal assignment.
+# ** Error: ../tb/tb_shift_register.vhd(34): (vcom-1136) Unknown identifier "button1".
+# ** Error: ../tb/tb_shift_register.vhd(35): near "process": (vcom-1576) expecting ';'.
+# End time: 14:55:50 on Oct 30,2020, Elapsed time: 0:00:01
+# Errors: 12, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./../script/script.do line 21
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -work work ../tb/tb_shift_register.vhd"
+do ../script/script.do
+# compilation started!
+# Library work already exists !!!
+# Compile Toplevel...
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:01:27 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../src/shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk
+# -- Compiling architecture arch of shift_register_clk
+# End time: 15:01:27 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:01:27 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../tb/tb_shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk_tb
+# -- Compiling architecture arch of shift_register_clk_tb
+# -- Loading entity shift_register_clk
+# ** Error: ../tb/tb_shift_register.vhd(28): (vcom-1136) Unknown identifier "clk".
+# ** Error: ../tb/tb_shift_register.vhd(28): (vcom-1136) Unknown identifier "button1".
+# ** Error: ../tb/tb_shift_register.vhd(28): (vcom-1136) Unknown identifier "button2".
+# ** Error: ../tb/tb_shift_register.vhd(29): (vcom-1136) Unknown identifier "q_reg".
+# ** Error: ../tb/tb_shift_register.vhd(28): (vcom-1484) Unknown formal identifier "clock".
+# ** Error: ../tb/tb_shift_register.vhd(28): (vcom-1484) Unknown formal identifier "B1".
+# ** Error: ../tb/tb_shift_register.vhd(28): (vcom-1484) Unknown formal identifier "B2".
+# ** Error: ../tb/tb_shift_register.vhd(29): (vcom-1484) Unknown formal identifier "LEDR".
+# ** Error: ../tb/tb_shift_register.vhd(32): near "wait": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Error: ../tb/tb_shift_register.vhd(33): Illegal target for signal assignment.
+# ** Error: ../tb/tb_shift_register.vhd(33): (vcom-1136) Unknown identifier "button1".
+# ** Error: ../tb/tb_shift_register.vhd(34): near "process": (vcom-1576) expecting ';'.
+# End time: 15:01:27 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 12, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./../script/script.do line 21
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -work work ../tb/tb_shift_register.vhd"
+do ../script/script.do
+# compilation started!
+# Library work already exists !!!
+# Compile Toplevel...
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:04:44 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../src/shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk
+# -- Compiling architecture arch of shift_register_clk
+# End time: 15:04:44 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:04:44 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../tb/tb_shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk_tb
+# -- Compiling architecture arch of shift_register_clk_tb
+# -- Loading entity shift_register_clk
+# ** Error: ../tb/tb_shift_register.vhd(33): (vcom-1484) Unknown formal identifier "clock".
+# ** Error: ../tb/tb_shift_register.vhd(33): (vcom-1484) Unknown formal identifier "B1".
+# ** Error: ../tb/tb_shift_register.vhd(33): (vcom-1484) Unknown formal identifier "B2".
+# ** Error: ../tb/tb_shift_register.vhd(34): (vcom-1484) Unknown formal identifier "LEDR".
+# ** Error: ../tb/tb_shift_register.vhd(37): near "wait": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Error: ../tb/tb_shift_register.vhd(39): near "process": (vcom-1576) expecting ';'.
+# End time: 15:04:44 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./../script/script.do line 21
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -work work ../tb/tb_shift_register.vhd"
+do ../script/script.do
+# compilation started!
+# Library work already exists !!!
+# Compile Toplevel...
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:05:34 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../src/shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk
+# -- Compiling architecture arch of shift_register_clk
+# End time: 15:05:34 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:05:34 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../tb/tb_shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk_tb
+# -- Compiling architecture arch of shift_register_clk_tb
+# -- Loading entity shift_register_clk
+# ** Error: ../tb/tb_shift_register.vhd(33): (vcom-1136) Unknown identifier "clock".
+# ** Error: ../tb/tb_shift_register.vhd(33): (vcom-1136) Unknown identifier "B1".
+# ** Error: ../tb/tb_shift_register.vhd(33): (vcom-1136) Unknown identifier "B2".
+# ** Error: ../tb/tb_shift_register.vhd(34): (vcom-1136) Unknown identifier "LEDR".
+# ** Error: ../tb/tb_shift_register.vhd(37): near "wait": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Error: ../tb/tb_shift_register.vhd(39): near "process": (vcom-1576) expecting ';'.
+# End time: 15:05:34 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./../script/script.do line 21
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -work work ../tb/tb_shift_register.vhd"
+do ../script/script.do
+# compilation started!
+# Library work already exists !!!
+# Compile Toplevel...
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:06:18 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../src/shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk
+# -- Compiling architecture arch of shift_register_clk
+# End time: 15:06:18 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:06:18 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../tb/tb_shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk_tb
+# -- Compiling architecture arch of shift_register_clk_tb
+# -- Loading entity shift_register_clk
+# ** Error: ../tb/tb_shift_register.vhd(33): (vcom-1136) Unknown identifier "clock".
+# ** Error: ../tb/tb_shift_register.vhd(33): (vcom-1136) Unknown identifier "B1".
+# ** Error: ../tb/tb_shift_register.vhd(33): (vcom-1136) Unknown identifier "B2".
+# ** Error: ../tb/tb_shift_register.vhd(34): (vcom-1136) Unknown identifier "LEDR".
+# ** Note: ../tb/tb_shift_register.vhd(44): VHDL Compiler exiting
+# End time: 15:06:18 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./../script/script.do line 21
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -work work ../tb/tb_shift_register.vhd"
+do ../script/script.do
+# compilation started!
+# Library work already exists !!!
+# Compile Toplevel...
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:08:11 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../src/shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk
+# -- Compiling architecture arch of shift_register_clk
+# End time: 15:08:11 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:08:11 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../tb/tb_shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk_tb
+# -- Compiling architecture arch of shift_register_clk_tb
+# -- Loading entity shift_register_clk
+# ** Error: ../tb/tb_shift_register.vhd(40): Illegal target for signal assignment.
+# ** Error: ../tb/tb_shift_register.vhd(40): (vcom-1136) Unknown identifier "button1".
+# ** Note: ../tb/tb_shift_register.vhd(44): VHDL Compiler exiting
+# End time: 15:08:11 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./../script/script.do line 21
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -work work ../tb/tb_shift_register.vhd"
+do ../script/script.do
+# compilation started!
+# Library work already exists !!!
+# Compile Toplevel...
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:19:28 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../src/shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk
+# -- Compiling architecture arch of shift_register_clk
+# End time: 15:19:28 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:19:28 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../tb/tb_shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk_tb
+# -- Compiling architecture arch of shift_register_clk_tb
+# -- Loading entity shift_register_clk
+# ** Error: ../tb/tb_shift_register.vhd(33): (vcom-1136) Unknown identifier "clock".
+# ** Error: ../tb/tb_shift_register.vhd(33): (vcom-1136) Unknown identifier "B1".
+# ** Error: ../tb/tb_shift_register.vhd(33): (vcom-1136) Unknown identifier "B2".
+# ** Error: ../tb/tb_shift_register.vhd(34): (vcom-1136) Unknown identifier "LEDR".
+# ** Note: ../tb/tb_shift_register.vhd(44): VHDL Compiler exiting
+# End time: 15:19:28 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./../script/script.do line 21
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -work work ../tb/tb_shift_register.vhd"
+do ../script/script.do
+# compilation started!
+# Library work already exists !!!
+# Compile Toplevel...
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:23:01 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../src/shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk
+# -- Compiling architecture arch of shift_register_clk
+# End time: 15:23:01 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:23:01 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../tb/tb_shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk_tb
+# -- Compiling architecture arch of shift_register_clk_tb
+# -- Loading entity shift_register_clk
+# ** Error: ../tb/tb_shift_register.vhd(33): (vcom-1484) Unknown formal identifier "clock".
+# ** Error: ../tb/tb_shift_register.vhd(34): (vcom-1484) Unknown formal identifier "B1".
+# ** Error: ../tb/tb_shift_register.vhd(35): (vcom-1484) Unknown formal identifier "B2".
+# ** Error: ../tb/tb_shift_register.vhd(36): (vcom-1484) Unknown formal identifier "LEDR".
+# ** Note: ../tb/tb_shift_register.vhd(46): VHDL Compiler exiting
+# End time: 15:23:01 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./../script/script.do line 21
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -work work ../tb/tb_shift_register.vhd"
+do ../script/script.do
+# compilation started!
+# Library work already exists !!!
+# Compile Toplevel...
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:25:46 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../src/shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk
+# -- Compiling architecture arch of shift_register_clk
+# End time: 15:25:46 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:25:46 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../tb/tb_shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk_tb
+# -- Compiling architecture arch of shift_register_clk_tb
+# -- Compiling configuration cfg_shift_register_clk_tb
+# -- Loading entity shift_register_clk_tb
+# -- Loading architecture arch of shift_register_clk_tb
+# -- Loading entity shift_register_clk
+# ** Error: ../tb/tb_shift_register.vhd(54): near "port": (vcom-1576) expecting END.
+# End time: 15:25:46 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./../script/script.do line 21
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -work work ../tb/tb_shift_register.vhd"
+do ../script/script.do
+# compilation started!
+# Library work already exists !!!
+# Compile Toplevel...
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:26:44 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../src/shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk
+# -- Compiling architecture arch of shift_register_clk
+# End time: 15:26:44 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:26:44 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../tb/tb_shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk_tb
+# -- Compiling architecture arch of shift_register_clk_tb
+# ** Error: ../tb/tb_shift_register.vhd(33): near "port": syntax error
+# ** Note: ../tb/tb_shift_register.vhd(46): VHDL Compiler exiting
+# End time: 15:26:44 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./../script/script.do line 21
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -work work ../tb/tb_shift_register.vhd"
+do ../script/script.do
+# compilation started!
+# Library work already exists !!!
+# Compile Toplevel...
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:26:54 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../src/shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk
+# -- Compiling architecture arch of shift_register_clk
+# End time: 15:26:54 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:26:54 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../tb/tb_shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk_tb
+# -- Compiling architecture arch of shift_register_clk_tb
+# -- Compiling configuration cfg_shift_register_clk_tb
+# -- Loading entity shift_register_clk_tb
+# -- Loading architecture arch of shift_register_clk_tb
+# -- Loading entity shift_register_clk
+# ** Error: ../tb/tb_shift_register.vhd(54): near "port": (vcom-1576) expecting END.
+# End time: 15:26:55 on Oct 30,2020, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./../script/script.do line 21
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -work work ../tb/tb_shift_register.vhd"
+do ../script/script.do
+# compilation started!
+# Library work already exists !!!
+# Compile Toplevel...
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:27:56 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../src/shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk
+# -- Compiling architecture arch of shift_register_clk
+# End time: 15:27:56 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:27:56 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../tb/tb_shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk_tb
+# -- Compiling architecture arch of shift_register_clk_tb
+# -- Compiling configuration cfg_shift_register_clk_tb
+# -- Loading entity shift_register_clk_tb
+# -- Loading architecture arch of shift_register_clk_tb
+# -- Loading entity shift_register_clk
+# ** Error: ../tb/tb_shift_register.vhd(54): (vcom-1484) Unknown formal identifier "clock".
+# ** Error: ../tb/tb_shift_register.vhd(55): (vcom-1484) Unknown formal identifier "B1".
+# ** Error: ../tb/tb_shift_register.vhd(56): (vcom-1484) Unknown formal identifier "B2".
+# ** Error: ../tb/tb_shift_register.vhd(57): (vcom-1484) Unknown formal identifier "LEDR".
+# ** Error: ../tb/tb_shift_register.vhd(52): Component instance "dut : shift_register_clk" not found.
+# ** Note: ../tb/tb_shift_register.vhd(60): VHDL Compiler exiting
+# End time: 15:27:56 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./../script/script.do line 21
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -work work ../tb/tb_shift_register.vhd"
+do ../script/script.do
+# compilation started!
+# Library work already exists !!!
+# Compile Toplevel...
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:28:03 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../src/shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk
+# -- Compiling architecture arch of shift_register_clk
+# End time: 15:28:03 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:28:03 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../tb/tb_shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk_tb
+# -- Compiling architecture arch of shift_register_clk_tb
+# -- Compiling configuration cfg_shift_register_clk_tb
+# -- Loading entity shift_register_clk_tb
+# -- Loading architecture arch of shift_register_clk_tb
+# -- Loading entity shift_register_clk
+# ** Error: ../tb/tb_shift_register.vhd(54): near "port": (vcom-1576) expecting END.
+# End time: 15:28:03 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./../script/script.do line 21
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -work work ../tb/tb_shift_register.vhd"
+do ../script/script.do
+# compilation started!
+# Library work already exists !!!
+# Compile Toplevel...
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:33:12 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../src/shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk
+# -- Compiling architecture arch of shift_register_clk
+# End time: 15:33:12 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:33:12 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../tb/tb_shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk_tb
+# -- Compiling architecture arch of shift_register_clk_tb
+# -- Compiling configuration cfg_shift_register_clk_tb
+# -- Loading entity shift_register_clk_tb
+# -- Loading architecture arch of shift_register_clk_tb
+# -- Loading entity shift_register_clk
+# ** Error: ../tb/tb_shift_register.vhd(53): (vcom-1131) Port "clock" is declared on component "shift_register_clk" but not on entity "shift_register_clk".
+# ** Error: ../tb/tb_shift_register.vhd(53): (vcom-1131) Port "B1" is declared on component "shift_register_clk" but not on entity "shift_register_clk".
+# ** Error: ../tb/tb_shift_register.vhd(53): (vcom-1131) Port "B2" is declared on component "shift_register_clk" but not on entity "shift_register_clk".
+# ** Error: ../tb/tb_shift_register.vhd(53): (vcom-1131) Port "LEDR" is declared on component "shift_register_clk" but not on entity "shift_register_clk".
+# ** Error (suppressible): ../tb/tb_shift_register.vhd(53): (vcom-1130) Port "button1" of entity "shift_register_clk" is not in the component being instantiated.
+# ** Error (suppressible): ../tb/tb_shift_register.vhd(53): (vcom-1130) Port "button2" of entity "shift_register_clk" is not in the component being instantiated.
+# ** Error (suppressible): ../tb/tb_shift_register.vhd(53): (vcom-1130) Port "clk" of entity "shift_register_clk" is not in the component being instantiated.
+# ** Note: ../tb/tb_shift_register.vhd(55): VHDL Compiler exiting
+# End time: 15:33:12 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 7, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./../script/script.do line 21
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -work work ../tb/tb_shift_register.vhd"
+do ../script/script.do
+# compilation started!
+# Library work already exists !!!
+# Compile Toplevel...
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:35:27 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../src/shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk
+# -- Compiling architecture arch of shift_register_clk
+# End time: 15:35:27 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:35:27 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../tb/tb_shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk_tb
+# -- Compiling architecture arch of shift_register_clk_tb
+# -- Loading entity shift_register_clk
+# ** Error: ../tb/tb_shift_register.vhd(32): (vcom-1136) Unknown identifier "clock".
+# ** Error: ../tb/tb_shift_register.vhd(32): (vcom-1136) Unknown identifier "B1".
+# ** Error: ../tb/tb_shift_register.vhd(32): (vcom-1136) Unknown identifier "B2".
+# ** Error: ../tb/tb_shift_register.vhd(33): (vcom-1136) Unknown identifier "LEDR".
+# ** Error: ../tb/tb_shift_register.vhd(37): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Note: ../tb/tb_shift_register.vhd(40): VHDL Compiler exiting
+# End time: 15:35:28 on Oct 30,2020, Elapsed time: 0:00:01
+# Errors: 5, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./../script/script.do line 21
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -work work ../tb/tb_shift_register.vhd"
+do ../script/script.do
+# compilation started!
+# Library work already exists !!!
+# Compile Toplevel...
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:38:43 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../src/shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk
+# -- Compiling architecture arch of shift_register_clk
+# End time: 15:38:43 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:38:43 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../tb/tb_shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk_tb
+# -- Compiling architecture arch of shift_register_clk_tb
+# -- Loading entity shift_register_clk
+# ** Error: ../tb/tb_shift_register.vhd(32): (vcom-1136) Unknown identifier "clock".
+# ** Error: ../tb/tb_shift_register.vhd(32): (vcom-1136) Unknown identifier "B1".
+# ** Error: ../tb/tb_shift_register.vhd(32): (vcom-1136) Unknown identifier "B2".
+# ** Error: ../tb/tb_shift_register.vhd(33): (vcom-1136) Unknown identifier "LEDR".
+# ** Error: ../tb/tb_shift_register.vhd(37): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Note: ../tb/tb_shift_register.vhd(40): VHDL Compiler exiting
+# End time: 15:38:43 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./../script/script.do line 21
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -work work ../tb/tb_shift_register.vhd"
+do ../script/script.do
+# compilation started!
+# Library work already exists !!!
+# Compile Toplevel...
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:39:43 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../src/shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk
+# -- Compiling architecture arch of shift_register_clk
+# End time: 15:39:43 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:39:43 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../tb/tb_shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk_tb
+# -- Compiling architecture arch of shift_register_clk_tb
+# -- Loading entity shift_register_clk
+# ** Error: ../tb/tb_shift_register.vhd(32): (vcom-1136) Unknown identifier "clock".
+# ** Error: ../tb/tb_shift_register.vhd(32): (vcom-1136) Unknown identifier "B1".
+# ** Error: ../tb/tb_shift_register.vhd(32): (vcom-1136) Unknown identifier "B2".
+# ** Error: ../tb/tb_shift_register.vhd(33): (vcom-1136) Unknown identifier "LEDR".
+# ** Error: ../tb/tb_shift_register.vhd(37): Integer literal 1 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Note: ../tb/tb_shift_register.vhd(40): VHDL Compiler exiting
+# End time: 15:39:43 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./../script/script.do line 21
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -work work ../tb/tb_shift_register.vhd"
+do ../script/script.do
+# compilation started!
+# Library work already exists !!!
+# Compile Toplevel...
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:40:05 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../src/shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk
+# -- Compiling architecture arch of shift_register_clk
+# End time: 15:40:05 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:40:05 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../tb/tb_shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk_tb
+# -- Compiling architecture arch of shift_register_clk_tb
+# -- Loading entity shift_register_clk
+# ** Error: ../tb/tb_shift_register.vhd(32): (vcom-1136) Unknown identifier "clock".
+# ** Error: ../tb/tb_shift_register.vhd(32): (vcom-1136) Unknown identifier "B1".
+# ** Error: ../tb/tb_shift_register.vhd(32): (vcom-1136) Unknown identifier "B2".
+# ** Error: ../tb/tb_shift_register.vhd(33): (vcom-1136) Unknown identifier "LEDR".
+# ** Note: ../tb/tb_shift_register.vhd(40): VHDL Compiler exiting
+# End time: 15:40:05 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./../script/script.do line 21
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -work work ../tb/tb_shift_register.vhd"
+do ../script/script.do
+# compilation started!
+# Library work already exists !!!
+# Compile Toplevel...
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:43:14 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../src/shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk
+# -- Compiling architecture arch of shift_register_clk
+# End time: 15:43:14 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:43:14 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../tb/tb_shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk_tb
+# -- Compiling architecture arch of shift_register_clk_tb
+# -- Loading entity shift_register_clk
+# ** Error: ../tb/tb_shift_register.vhd(26): near "SIGNAL": (vcom-1576) expecting ';'.
+# ** Error: ../tb/tb_shift_register.vhd(33): near "port": syntax error
+# ** Error: ../tb/tb_shift_register.vhd(38): Illegal target for signal assignment.
+# ** Error: ../tb/tb_shift_register.vhd(38): (vcom-1136) Unknown identifier "button1".
+# ** Note: ../tb/tb_shift_register.vhd(41): VHDL Compiler exiting
+# End time: 15:43:14 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./../script/script.do line 21
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -work work ../tb/tb_shift_register.vhd"
+do ../script/script.do
+# compilation started!
+# Library work already exists !!!
+# Compile Toplevel...
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:43:48 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../src/shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk
+# -- Compiling architecture arch of shift_register_clk
+# End time: 15:43:48 on Oct 30,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:43:48 on Oct 30,2020
+# vcom -reportprogress 300 -work work ../tb/tb_shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_register_clk_tb
+# -- Compiling architecture arch of shift_register_clk_tb
+# -- Loading entity shift_register_clk
+# ** Error: ../tb/tb_shift_register.vhd(24): (vcom-1131) Port "clock" is declared on component "shift_register_clk" but not on entity "shift_register_clk".
+# ** Error: ../tb/tb_shift_register.vhd(24): (vcom-1131) Port "B1" is declared on component "shift_register_clk" but not on entity "shift_register_clk".
+# ** Error: ../tb/tb_shift_register.vhd(24): (vcom-1131) Port "B2" is declared on component "shift_register_clk" but not on entity "shift_register_clk".
+# ** Error: ../tb/tb_shift_register.vhd(24): (vcom-1131) Port "LEDR" is declared on component "shift_register_clk" but not on entity "shift_register_clk".
+# ** Error (suppressible): ../tb/tb_shift_register.vhd(24): (vcom-1130) Port "button1" of entity "shift_register_clk" is not in the component being instantiated.
+# ** Error (suppressible): ../tb/tb_shift_register.vhd(24): (vcom-1130) Port "button2" of entity "shift_register_clk" is not in the component being instantiated.
+# ** Error (suppressible): ../tb/tb_shift_register.vhd(24): (vcom-1130) Port "clk" of entity "shift_register_clk" is not in the component being instantiated.
+# ** Error: ../tb/tb_shift_register.vhd(33): near "port": syntax error
+# ** Error: ../tb/tb_shift_register.vhd(24): No statement with label "dut" was found.
+# ** Note: ../tb/tb_shift_register.vhd(41): VHDL Compiler exiting
+# End time: 15:43:49 on Oct 30,2020, Elapsed time: 0:00:01
+# Errors: 9, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./../script/script.do line 21
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -work work ../tb/tb_shift_register.vhd"
