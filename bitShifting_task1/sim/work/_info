@@ -13,24 +13,24 @@ Ccfg_shift_register_clk_tb
 eshift_register_clk_tb
 aarch
 Z1 DEx4 work 18 shift_register_clk 0 22 ZBU`ibjNKjD_`dLJa1KN]2
-DAx4 work 21 shift_register_clk_tb 4 arch 22 RnhU[5:^_PNYg7KJ>mjza3
+DAx4 work 21 shift_register_clk_tb 4 arch 22 MdnG]8FTT;dQHY8NkZ=4P0
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-Z4 DEx4 work 21 shift_register_clk_tb 0 22 [kfcc5ZGZSnjE`Pl0Ag`Y1
-!i122 47
-Z5 w1604079807
+Z4 DEx4 work 21 shift_register_clk_tb 0 22 L10GVXdW]0<fca0DHT6TM3
+!i122 71
+Z5 w1604155904
 R0
 Z6 8../tb/tb_shift_register.vhd
 Z7 F../tb/tb_shift_register.vhd
 l0
-L45 1
-VY:]9Z1Nb8AJRBM9@U2o5z2
-!s100 dicA[M2MZ2ZlVF;Oc>H1l2
+L42 1
+VUzm0I9ilj@2B?9N3@IKi?2
+!s100 0M@6cj7NYRL61`lGK]b8W1
 Z8 OV;C;2020.1;71
 32
-Z9 !s110 1604079810
+Z9 !s110 1604155919
 !i10b 1
-Z10 !s108 1604079810.000000
+Z10 !s108 1604155919.000000
 Z11 !s90 -reportprogress|300|-work|work|../tb/tb_shift_register.vhd|
 Z12 !s107 ../tb/tb_shift_register.vhd|
 !i113 1
@@ -40,7 +40,7 @@ Eshift_register_clk
 Z15 w1604064608
 R2
 R3
-!i122 46
+!i122 70
 R0
 Z16 8../src/shift_register.vhd
 Z17 F../src/shift_register.vhd
@@ -52,9 +52,9 @@ R8
 32
 R9
 !i10b 1
-R10
-Z18 !s90 -reportprogress|300|-work|work|../src/shift_register.vhd|
-Z19 !s107 ../src/shift_register.vhd|
+Z18 !s108 1604155918.000000
+Z19 !s90 -reportprogress|300|-work|work|../src/shift_register.vhd|
+Z20 !s107 ../src/shift_register.vhd|
 !i113 1
 R13
 R14
@@ -62,7 +62,7 @@ Aarch
 R2
 R3
 R1
-!i122 46
+!i122 70
 l35
 L28 34
 VUKWA@ZFVKnmPG=nIEXIiZ1
@@ -71,9 +71,9 @@ R8
 32
 R9
 !i10b 1
-R10
 R18
 R19
+R20
 !i113 1
 R13
 R14
@@ -81,14 +81,14 @@ Eshift_register_clk_tb
 R5
 R2
 R3
-!i122 47
+!i122 71
 R0
 R6
 R7
 l0
 L11 1
-V[kfcc5ZGZSnjE`Pl0Ag`Y1
-!s100 WkC:WDc3F@SU1oEFEFk8Y2
+VL10GVXdW]0<fca0DHT6TM3
+!s100 3IhT:@49a]Z4j:R3h3C?T2
 R8
 32
 R9
@@ -103,11 +103,11 @@ Aarch
 R2
 R3
 R4
-!i122 47
-l30
-Z20 L14 28
-Z21 VRnhU[5:^_PNYg7KJ>mjza3
-Z22 !s100 LkAaC<4BjmGMcUAG=?>nN3
+!i122 71
+l26
+L15 26
+VMdnG]8FTT;dQHY8NkZ=4P0
+!s100 ^HiM@B@8Hafi2U^mjMM492
 R8
 32
 R9
