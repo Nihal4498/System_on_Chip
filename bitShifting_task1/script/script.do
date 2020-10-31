@@ -34,4 +34,5 @@ view wave
 add wave -r /*
 #
 echo "testbench run all"
-run -all
+#run -all
+run 1000 ns

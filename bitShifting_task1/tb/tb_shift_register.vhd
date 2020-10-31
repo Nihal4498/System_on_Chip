@@ -33,11 +33,24 @@ begin
 				LEDR => q_reg);
 					
 	stimuli: process begin
-	wait for 10 ns;
-	button1 <= '1';
-	end process;
+		button1 <= '0';
+		button2 <= '0';
+		wait until rising_edge(clk);
+		button1 <= '1';
+		button2 <= '1';
+		wait;
+	end process stimuli;
+	
+	clocking : process begin
+		clk <= '1';
+		Wait for 10 ns;
+		clk <= '0';
+		Wait for 10 ns;
+	end process clocking;
 	
 end arch;
+
+use work.all;
 
 configuration cfg_shift_register_clk_tb of shift_register_clk_tb is
 for arch
