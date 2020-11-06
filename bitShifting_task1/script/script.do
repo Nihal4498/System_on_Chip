@@ -28,11 +28,11 @@ echo "simulation"
 vsim -voptargs=+acc -t 1ns work.shift_register_clk_tb
 #
 echo "add wave"
-radix -hexadecimal
+#radix -hexadecimal
+radix -binary
 view wave
 #
 add wave -r /*
 #
 echo "testbench run all"
-#run -all
-run 1000 ns
+run 600 ns

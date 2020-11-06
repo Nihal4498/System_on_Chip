@@ -14,50 +14,68 @@ end shift_register_clk_tb;
 
 architecture arch of shift_register_clk_tb is
    
-   component shift_register_clk_comp is
-    port(
-        clock : in std_logic; 
-		B1, B2 : in std_logic;
-        LEDR : out std_logic_vector (7 downto 0)
-    );
-	end component;
-	SIGNAL clk, button1, button2 : std_logic;
-	SIGNAL q_reg : std_logic_vector(7 downto 0);
+   COMPONENT shift_register_clk is
+		-- GENERIC (data: STD_LOGIC_VECTOR(7 DOWNTO 0) := ('1', '1', '0', '0', '0', '1', '1', '1'));
+		
+		PORT(
+			button1, button2 : IN STD_LOGIC;
+			clk		:	IN STD_LOGIC;
+			q_reg	:	OUT	STD_LOGIC_VECTOR(7 DOWNTO 0)
+		);
+	END COMPONENT shift_register_clk;
+	
+	SIGNAL clk_s, button1_s, button2_s : STD_LOGIC;
+	SIGNAL q_reg_s : STD_LOGIC_VECTOR (7 DOWNTO 0);
 begin
     
     -- shift_register testing with clock pulse
-    dut: shift_register_clk_comp    
-    port map (	clock => clk,
-				B1 => button1,
-				B2 => button2,
-				LEDR => q_reg);
+    dut: shift_register_clk    
+		port map (	clk => clk_s,
+					button1 => button1_s,
+					button2 => button2_s,
+					q_reg => q_reg_s);
 					
 	stimuli: process begin
-		button1 <= '0';
-		button2 <= '0';
-		wait until rising_edge(clk);
-		button1 <= '1';
-		button2 <= '1';
+		-- reset at beginning
+		button1_s <= '0';
+		button2_s <= '0';
+		wait until rising_edge(clk_s);
+		for i in 1 to 5 loop
+			wait until rising_edge(clk_s);
+		end loop;
+		
+		-- right shift for 5 times
+		
+		for i in 1 to 7 loop
+			button1_s <= '1';
+			button2_s <= '0';
+			wait until rising_edge(clk_s);
+			button1_s <= '0';
+			button2_s <= '0';
+			wait until rising_edge(clk_s);
+		end loop;
+		
+		-- reset 
+		
+		button1_s <= '0';
+		button2_s <= '1';
+		wait until rising_edge(clk_s);
+		button1_s <= '0';
+		button2_s <= '0';
+		wait until rising_edge(clk_s);
+		
+		-- more run time
+		for i in 1 to 5 loop
+			wait until rising_edge(clk_s);
+		end loop;
 		wait;
 	end process stimuli;
 	
 	clocking : process begin
-		clk <= '1';
+		clk_s <= '1';
 		Wait for 10 ns;
-		clk <= '0';
+		clk_s <= '0';
 		Wait for 10 ns;
 	end process clocking;
-	
 end arch;
 
-use work.all;
-
-configuration cfg_shift_register_clk_tb of shift_register_clk_tb is
-for arch
-	for dut: shift_register_clk_comp
-		use entity work.shift_register_clk(arch)
-		port map (clk => clock, button1=>B1,button2=>B2,
-						q_reg=>LEDR);
-	end for;
-end for;
-end cfg_shift_register_clk_tb;

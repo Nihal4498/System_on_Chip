@@ -13,108 +13,108 @@ Ccfg_shift_register_clk_tb
 eshift_register_clk_tb
 aarch
 Z1 DEx4 work 18 shift_register_clk 0 22 ZBU`ibjNKjD_`dLJa1KN]2
-DAx4 work 21 shift_register_clk_tb 4 arch 22 J6>[iIG@GcN57;=5hIf?X1
+DAx4 work 21 shift_register_clk_tb 4 arch 22 []5XAKdzlT^Fc]L1AGmKR2
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 Z4 DEx4 work 21 shift_register_clk_tb 0 22 L10GVXdW]0<fca0DHT6TM3
-!i122 91
-Z5 w1604159355
+!i122 17
+w1604621760
 R0
-Z6 8../tb/tb_shift_register.vhd
-Z7 F../tb/tb_shift_register.vhd
+Z5 8../tb/tb_shift_register.vhd
+Z6 F../tb/tb_shift_register.vhd
 l0
-L55 1
-VLloJIbS0Elc^QM6K9[>j43
-!s100 V[QnGbJ]`nkbI5814AHdT0
-Z8 OV;C;2020.1;71
+L53 1
+VCnFlZUXN^g2hk?WQPdAih1
+!s100 QUGaEO;bAa8hgC_D@QJWJ0
+Z7 OV;C;2020.1;71
 32
-Z9 !s110 1604159362
+!s110 1604621762
 !i10b 1
-Z10 !s108 1604159362.000000
-Z11 !s90 -reportprogress|300|-work|work|../tb/tb_shift_register.vhd|
-Z12 !s107 ../tb/tb_shift_register.vhd|
+!s108 1604621762.000000
+Z8 !s90 -reportprogress|300|-work|work|../tb/tb_shift_register.vhd|
+Z9 !s107 ../tb/tb_shift_register.vhd|
 !i113 1
-Z13 o-work work
-Z14 tExplicit 1 CvgOpt 0
+Z10 o-work work
+Z11 tExplicit 1 CvgOpt 0
 Eshift_register_clk
-Z15 w1604064608
+Z12 w1604064608
 R2
 R3
-!i122 90
+!i122 52
 R0
-Z16 8../src/shift_register.vhd
-Z17 F../src/shift_register.vhd
+Z13 8../src/shift_register.vhd
+Z14 F../src/shift_register.vhd
 l0
 L18 1
 VZBU`ibjNKjD_`dLJa1KN]2
 !s100 Nd;jYDzUGT]?fzD0^5RA>2
-R8
+R7
 32
-Z18 !s110 1604159361
+Z15 !s110 1604623138
 !i10b 1
-Z19 !s108 1604159361.000000
-Z20 !s90 -reportprogress|300|-work|work|../src/shift_register.vhd|
-Z21 !s107 ../src/shift_register.vhd|
+Z16 !s108 1604623138.000000
+Z17 !s90 -reportprogress|300|-work|work|../src/shift_register.vhd|
+Z18 !s107 ../src/shift_register.vhd|
 !i113 1
-R13
-R14
+R10
+R11
 Aarch
 R2
 R3
 R1
-!i122 90
+!i122 52
 l35
 L28 34
 VUKWA@ZFVKnmPG=nIEXIiZ1
 !s100 hGk3NGQ9Xj49O;RERh58[2
-R8
+R7
 32
-R18
+R15
 !i10b 1
-R19
-R20
-R21
+R16
+R17
+R18
 !i113 1
-R13
-R14
+R10
+R11
 Eshift_register_clk_tb
-R5
+Z19 w1604623134
 R2
 R3
-!i122 91
+!i122 53
 R0
+R5
 R6
-R7
 l0
 L11 1
 VL10GVXdW]0<fca0DHT6TM3
 !s100 3IhT:@49a]Z4j:R3h3C?T2
-R8
+R7
 32
-R9
+R15
 !i10b 1
+R16
+R8
+R9
+!i113 1
 R10
 R11
-R12
-!i113 1
-R13
-R14
 Aarch
 R2
 R3
 R4
-!i122 91
-l26
-Z22 L15 37
-Z23 VJ6>[iIG@GcN57;=5hIf?X1
-Z24 !s100 g9TmgQCzzWiQ:`oL:NgZ<0
-R8
+!i122 53
+l29
+Z20 L15 66
+VHHiYO`in[fh<EC<OfJczQ3
+!s100 QzM_a^KJ84ILNY^[O<X]O0
+R7
 32
-R9
+R15
 !i10b 1
+R16
+R8
+R9
+!i113 1
 R10
 R11
-R12
-!i113 1
-R13
-R14
