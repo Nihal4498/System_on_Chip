@@ -79,3 +79,10 @@ begin
 	end process clocking;
 end arch;
 
+configuration cfg_shift_register_clk_tb of shift_register_clk_tb is
+for arch
+	for dut: shift_register_clk
+		use entity work.shift_register_clk(arch);
+	end for;
+end for;
+end cfg_shift_register_clk_tb;
