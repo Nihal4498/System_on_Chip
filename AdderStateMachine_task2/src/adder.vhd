@@ -15,9 +15,9 @@ architecture arch of adder_clk is
 			process(clk)
 				begin
 					if(rising_edge(clk)) then
-					if ( invs = '1') then
-					out_0 <= std_logic_vector (unsigned(in_1) + unsigned(in_2));
-					end if;
+						if ( invs = '1') then
+							out_0 <= std_logic_vector (unsigned(in_1) + unsigned(in_2));
+						end if;
 					end if;
 			end process;
 end arch;
