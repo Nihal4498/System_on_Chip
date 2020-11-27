@@ -7,7 +7,7 @@ ENTITY debouncer IS
 		cp_i 		: 	IN STD_LOGIC;
 		rb_i 		: 	IN STD_LOGIC;
 		clk_1m_i 	: 	IN STD_LOGIC;
-		clk_2s_i_i 	: 	IN STD_LOGIC;
+		clk_2s_i 	: 	IN STD_LOGIC;
 		rp_i 		: 	IN STD_LOGIC;
 		sp_o		:	OUT STD_LOGIC;
 		lp_o		:	OUT STD_LOGIC;
@@ -27,28 +27,114 @@ BEGIN
         IF (rb_i= '0') THEN cstate_s <= wait_s;
         ELSIF (cp_i'EVENT AND cp_i='1' AND cp_i'LAST_VALUE='0') THEN
             CASE cstate_s IS
-                WHEN s0 => IF(clk_1m_i='1' AND clk_2s_i='0' AND rp_i = '1') THEN state_s <= s1;END IF;
-                WHEN s1 => IF((clk_1m_i='1' AND clk_2s_i='0' AND rp_i='1') THEN state_s <= s2;END IF;
-                WHEN s2 => IF(clk_1m_i='1' AND clk_2s_i='0'  AND rp_i='1') THEN state_s <= s3;END IF;
-                WHEN s3 => IF(clk_1m_i='1' AND clk_2s_i='0'  AND rp_i='1') THEN state_s <= s4;END IF;
-                WHEN s4 => IF(clk_1m_i='1' AND clk_2s_i='0'  AND rp_i='1') THEN state_s <= s5;END IF;
-				WHEN s5 => IF(clk_1m_i='1' AND clk_2s_i='0'  AND rp_i='1') THEN state_s <= s6;END IF;
-                WHEN s6 => IF(clk_1m_i='1' AND clk_2s_i='0'  AND rp_i='1') THEN state_s <= s7;END IF;
-                WHEN s7 => IF(clk_1m_i='1' AND clk_2s_i='0'  AND rp_i='1') THEN state_s <= s8;END IF;
-                WHEN s8 => IF(clk_1m_i='1' AND clk_2s_i='0'  AND rp_i='1') THEN state_s <= s9;END IF;
-                WHEN s9 => IF(clk_1m_i='1' AND clk_2s_i='0'  AND rp_i='1') THEN state_s <= s10;END IF;
-				WHEN s10 => IF(clk_1m_i='1' AND clk_2s_i='0' AND rp_i='1') THEN state_s <= s11;END IF;
-                WHEN s11 => IF(clk_1m_i='1' AND clk_2s_i='0' AND rp_i='1') THEN state_s <= s12;END IF;
-                WHEN s12 => IF(clk_1m_i='1' AND clk_2s_i='0' AND rp_i='1') THEN state_s <= s13;END IF;
-                WHEN s13 => IF(clk_1m_i='1' AND clk_2s_i='0' AND rp_i='1') THEN state_s <= s14;END IF;
-                WHEN s14 => IF(clk_1m_i='1' AND clk_2s_i='0' AND rp_i='1') THEN state_s <= s15;END IF;
-				WHEN s15 => IF(clk_1m_i='1' AND clk_2s_i='1' AND rp_i='1') THEN state_s <= s16;END IF;
-                WHEN s16=> IF(clk_1m_i='1' AND clk_2s_i='1' AND rp_i='0') THEN state_s <= s17;END IF;
-				WHEN s16> IF(clk_1m_i='1' AND clk_2s_i='1'  AND rp_i='1') THEN state_s <= s18;END IF;
-				WHEN s18 => IF(clk_1m_i='1' AND clk_2s_i='0' AND dv_0='0') THEN state_s <= s0;END IF;
-                    
-                    
-					
+                WHEN s0 => IF(clk_1m_i='1' AND clk_2s_i='0' AND rp_i = '1') THEN state_s <= s1; ELSE state_s <= s0; END IF;
+                WHEN s1 => IF((clk_1m_i='1' AND clk_2s_i='0' AND rp_i='1') THEN state_s <= s2; ELSE state_s <= s0; END IF;
+                WHEN s2 => IF(clk_1m_i='1' AND clk_2s_i='0'  AND rp_i='1') THEN state_s <= s3; ELSE state_s <= s0; END IF;
+                WHEN s3 => IF(clk_1m_i='1' AND clk_2s_i='0'  AND rp_i='1') THEN state_s <= s4; ELSE state_s <= s0; END IF;
+                WHEN s4 => IF(clk_1m_i='1' AND clk_2s_i='0'  AND rp_i='1') THEN state_s <= s5; ELSE state_s <= s0; END IF;
+				WHEN s5 => IF(clk_1m_i='1' AND clk_2s_i='0'  AND rp_i='1') THEN state_s <= s6; ELSE state_s <= s0; END IF;
+                WHEN s6 => IF(clk_1m_i='1' AND clk_2s_i='0'  AND rp_i='1') THEN state_s <= s7; ELSE state_s <= s0; END IF;
+                WHEN s7 => IF(clk_1m_i='1' AND clk_2s_i='0'  AND rp_i='1') THEN state_s <= s8; ELSE state_s <= s0; END IF;
+                WHEN s8 => IF(clk_1m_i='1' AND clk_2s_i='0'  AND rp_i='1') THEN state_s <= s9; ELSE state_s <= s0; END IF;
+                WHEN s9 => IF(clk_1m_i='1' AND clk_2s_i='0'  AND rp_i='1') THEN state_s <= s10; ELSE state_s <= s0; END IF;
+				WHEN s10 => IF(clk_1m_i='1' AND clk_2s_i='0' AND rp_i='1') THEN state_s <= s11; ELSE state_s <= s0; END IF;
+                WHEN s11 => IF(clk_1m_i='1' AND clk_2s_i='0' AND rp_i='1') THEN state_s <= s12; ELSE state_s <= s0; END IF;
+                WHEN s12 => IF(clk_1m_i='1' AND clk_2s_i='0' AND rp_i='1') THEN state_s <= s13; ELSE state_s <= s0; END IF;
+                WHEN s13 => IF(clk_1m_i='1' AND clk_2s_i='0' AND rp_i='1') THEN state_s <= s14; ELSE state_s <= s0; END IF;
+                WHEN s14 => IF(clk_1m_i='1' AND clk_2s_i='0' AND rp_i='1') THEN state_s <= s15; ELSE state_s <= s0; END IF;
+                WHEN s15 => IF(clk_2s_i='1') THEN state_s <= s16; ELSE state_s <= s0; END IF;
+				WHEN s16 => IF(rp_i = '0') THEN state_s <= s17 ELSE state_s <= '0'; END IF;
+				WHEN s16 => IF(rp_i = '1') THEN state_s <= s18 ELSE state_s <= '0'; END IF;
+				WHEN s17 => state_s <= s0;
+				WHEN s8 => state_s <= s0;
+				WHEN OTHERS => state_s <= s0;
             END CASE;	  
         END IF;
     END PROCESS clocked;
+	
+	results : PROCESS(state_s)
+	BEGIN
+		
+		CASE state_s IS 
+		
+			WHEN s0 => 	sp_o <= '0'; 
+						lp_o <= '0'; 
+						dv_o <= '0';
+						
+			WHEN s1 => 	sp_o <= '0'; 
+						lp_o <= '0'; 
+						dv_o <= '0';
+			WHEN s2 => 	sp_o <= '0'; 
+						lp_o <= '0'; 
+						dv_o <= '0';
+						
+			WHEN s3 => 	sp_o <= '0'; 
+						lp_o <= '0'; 
+						dv_o <= '0';
+			WHEN s4 => 	sp_o <= '0'; 
+						lp_o <= '0'; 
+						dv_o <= '0';
+						
+			WHEN s5 => 	sp_o <= '0'; 
+						lp_o <= '0'; 
+						dv_o <= '0';
+						
+			WHEN s6 => 	sp_o <= '0'; 
+						lp_o <= '0'; 
+						dv_o <= '0';
+						
+			WHEN s7 => 	sp_o <= '0'; 
+						lp_o <= '0'; 
+						dv_o <= '0';
+						
+			WHEN s8 => 	sp_o <= '0'; 
+						lp_o <= '0'; 
+						dv_o <= '0';
+						
+			WHEN s9 => 	sp_o <= '0'; 
+						lp_o <= '0'; 
+						dv_o <= '0';
+						
+			WHEN s10 => sp_o <= '0'; 
+						lp_o <= '0'; 
+						dv_o <= '0';
+						
+			WHEN s11 => sp_o <= '0'; 
+						lp_o <= '0'; 
+						dv_o <= '0';
+						
+			WHEN s12 => sp_o <= '0'; 
+						lp_o <= '0'; 
+						dv_o <= '0';
+						
+			WHEN s13 => sp_o <= '0'; 
+						lp_o <= '0'; 
+						dv_o <= '0';
+						
+			WHEN s14 => sp_o <= '0'; 
+						lp_o <= '0'; 
+						dv_o <= '0';
+						
+			WHEN s15 => sp_o <= '0'; 
+						lp_o <= '0'; 
+						dv_o <= '0';
+						
+			WHEN s16 => sp_o <= '0'; 
+						lp_o <= '0'; 
+						dv_o <= '0';
+						
+			WHEN s17 => sp_o <= '1'; 
+						lp_o <= '0'; 
+						dv_o <= '1';
+						
+			WHEN s18 => sp_o <= '0'; 
+						lp_o <= '1'; 
+						dv_o <= '1';
+						
+			
+			
+		END CASE;
+	
+	END PROCESS results;
+	
+END arch;
