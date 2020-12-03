@@ -18,7 +18,7 @@ ARCHITECTURE ar1 OF c12ec IS
     CONSTANT s7 : STD_LOGIC_VECTOR(3 DOWNTO 0) := "0111";
     CONSTANT s8 : STD_LOGIC_VECTOR(3 DOWNTO 0) := "1000";
     CONSTANT s9 : STD_LOGIC_VECTOR(3 DOWNTO 0) := "1001";
-        CONSTANT s10 : STD_LOGIC_VECTOR(3 DOWNTO 0) := "1010";
+	CONSTANT s10 : STD_LOGIC_VECTOR(3 DOWNTO 0) := "1010";
     CONSTANT s11 : STD_LOGIC_VECTOR(3 DOWNTO 0) := "1011";
 
     SIGNAL state_s : STD_LOGIC_VECTOR(3 DOWNTO 0) := s0;
@@ -40,8 +40,8 @@ BEGIN
                     WHEN s7 => IF(en_i='1') THEN state_s <= s8;END IF;
                     WHEN s8 => IF(en_i='1') THEN state_s <= s9;END IF;
                     WHEN s9 => IF(en_i='1') THEN state_s <= s10;END IF;
-                                        WHEN s10 => IF(en_i='1') THEN state_s <= s11;END IF;
-                                        WHEN s11 => IF(en_i='1') THEN state_s <= s0;END IF;
+					WHEN s10 => IF(en_i='1') THEN state_s <= s11;END IF;
+					WHEN s11 => IF(en_i='1') THEN state_s <= s0;END IF;
                     WHEN others => state_s <= s0;
                 END CASE;
             END IF;

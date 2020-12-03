@@ -22,8 +22,7 @@ BEGIN
             ELSE
                 CASE state_s IS
                     WHEN s0 => IF(en_i='1') THEN state_s <= s1;END IF;
-                    WHEN s1 => IF(en_i='1') THEN state_s <= s2;END IF;
-                    
+                    WHEN s1 => IF(en_i='1') THEN state_s <= s0;END IF;
                     WHEN others => state_s <= s0;
                 END CASE;
             END IF;
