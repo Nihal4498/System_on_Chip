@@ -14,7 +14,7 @@ ARCHITECTURE arch OF reset_generator IS
 BEGIN
 	clocked : PROCESS (clk_12M)
 	BEGIN
-		IF(rising_edge(clk)) THEN
+		IF(rising_edge(clk_12M)) THEN
 			IF (clk_5s_i = '1') THEN
 				rb_o <= '0';
 			ELSE

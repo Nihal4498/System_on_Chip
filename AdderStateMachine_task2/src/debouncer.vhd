@@ -11,24 +11,26 @@ ENTITY debouncer IS
 		rp_i 		: 	IN STD_LOGIC;
 		sp_o		:	OUT STD_LOGIC;
 		lp_o		:	OUT STD_LOGIC;
-		dv_o		:	OUT STD_LOGIC
+		dv_o		:	OUT STD_LOGIC;
+		en_o 		: 	OUT STD_LOGIC;
+		clr_o 		:	OUT STD_LOGIC
 	);
 END debouncer;
 
-ARCHITECTURE debouncer IS
+ARCHITECTURE arch OF debouncer IS
 ----------------------------------------------------------------------------------------------------------------------------------------------
     TYPE state_name IS (s0,s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13,s14,s15,s16,s17,s18);
-    SIGNAL cstate_s : state_name := idle_st;
+    SIGNAL state_s : state_name := s0;
 ---------------------------------------------------------------------------------------------------------------------------------------------
 BEGIN
 ----------------------------------------------------------------------------------------------------------------------------------------------
     clocked:PROCESS (cp_i, clk_1m_i, clk_2s_i, rp_i)
     BEGIN
-        IF (rb_i= '0') THEN cstate_s <= wait_s;
+        IF (rb_i= '0') THEN state_s <= s0;
         ELSIF (cp_i'EVENT AND cp_i='1' AND cp_i'LAST_VALUE='0') THEN
-            CASE cstate_s IS
+            CASE state_s IS
                 WHEN s0 => IF(clk_1m_i='1' AND clk_2s_i='0' AND rp_i = '1') THEN state_s <= s1; ELSE state_s <= s0; END IF;
-                WHEN s1 => IF((clk_1m_i='1' AND clk_2s_i='0' AND rp_i='1') THEN state_s <= s2; ELSE state_s <= s0; END IF;
+                WHEN s1 => IF(clk_1m_i='1' AND clk_2s_i='0' AND rp_i='1') THEN state_s <= s2; ELSE state_s <= s0; END IF;
                 WHEN s2 => IF(clk_1m_i='1' AND clk_2s_i='0'  AND rp_i='1') THEN state_s <= s3; ELSE state_s <= s0; END IF;
                 WHEN s3 => IF(clk_1m_i='1' AND clk_2s_i='0'  AND rp_i='1') THEN state_s <= s4; ELSE state_s <= s0; END IF;
                 WHEN s4 => IF(clk_1m_i='1' AND clk_2s_i='0'  AND rp_i='1') THEN state_s <= s5; ELSE state_s <= s0; END IF;
@@ -43,10 +45,9 @@ BEGIN
                 WHEN s13 => IF(clk_1m_i='1' AND clk_2s_i='0' AND rp_i='1') THEN state_s <= s14; ELSE state_s <= s0; END IF;
                 WHEN s14 => IF(clk_1m_i='1' AND clk_2s_i='0' AND rp_i='1') THEN state_s <= s15; ELSE state_s <= s0; END IF;
                 WHEN s15 => IF(clk_2s_i='1') THEN state_s <= s16; ELSE state_s <= s0; END IF;
-				WHEN s16 => IF(rp_i = '0') THEN state_s <= s17 ELSE state_s <= '0'; END IF;
-				WHEN s16 => IF(rp_i = '1') THEN state_s <= s18 ELSE state_s <= '0'; END IF;
+				WHEN s16 => IF(rp_i = '0') THEN state_s <= s17; ELSIF(rp_i = '1') THEN state_s <= s18; ELSE state_s <= s0; END IF;
 				WHEN s17 => state_s <= s0;
-				WHEN s8 => state_s <= s0;
+				WHEN s18 => state_s <= s0;
 				WHEN OTHERS => state_s <= s0;
             END CASE;	  
         END IF;
@@ -136,5 +137,18 @@ BEGIN
 		END CASE;
 	
 	END PROCESS results;
+	
+	reset_func : PROCESS (cp_i)
+	BEGIN
+		if(rising_edge(cp_i)) THEN
+			IF(rp_i = '0') THEN
+				en_o <= '1';
+				clr_o <= '0';
+			ELSE
+				en_o <= '0';
+				clr_o <= '1';
+			END IF;
+		END IF;
+	END PROCESS reset_func;
 	
 END arch;

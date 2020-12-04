@@ -53,18 +53,18 @@ ARCHITECTURE arch of clk_generator IS
 	
 BEGIN
 
-	Divide_12 : entity work.c12ec PORT MAP(rb_i, clk_12M, en_i, cl_i, q12_s, c12_s);	-- 1 MHz
+	Divide_12 : entity work.c12ec PORT MAP(rb_i, clk_12M, en_i, clr_i, q12_s, c12_s);	-- 1 MHz
 	
-	Divide_10_100Khz : entity work.c10ec PORT MAP(rb_i, clk_12M, c12_s, cl_i, q100K_s, c100K_s) -- 100 KHz
-	Divide_10_10Khz : entity work.c10ec PORT MAP(rb_i, clk_12M, c100K_s, cl_i, q10K_s, c10K_s) -- 10 KHz
-	Divide_10_1Khz : entity work.c10ec PORT MAP(rb_i, clk_12M, c10K_s, cl_i, q1K_s, c1K_s) -- 1 KHz
-	Divide_10_100hz : entity work.c10ec PORT MAP(rb_i, clk_12M, c1K_s, cl_i, q100_s, c100_s) -- 100 Hz
-	Divide_10_10hz : entity work.c10ec PORT MAP(rb_i, clk_12M, c100_s, cl_i, q10_s, c10_s) -- 10 Hz
-	Divide_10_1hz : entity work.c10ec PORT MAP(rb_i, clk_12M, c10_s, cl_i, q1_s, c1_s) -- 1 Hz
+	Divide_10_100Khz : entity work.c10ec PORT MAP(rb_i, clk_12M, c12_s, clr_i, q100K_s, c100K_s); -- 100 KHz
+	Divide_10_10Khz : entity work.c10ec PORT MAP(rb_i, clk_12M, c100K_s, clr_i, q10K_s, c10K_s); -- 10 KHz
+	Divide_10_1Khz : entity work.c10ec PORT MAP(rb_i, clk_12M, c10K_s, clr_i, q1K_s, c1K_s); -- 1 KHz
+	Divide_10_100hz : entity work.c10ec PORT MAP(rb_i, clk_12M, c1K_s, clr_i, q100_s, c100_s); -- 100 Hz
+	Divide_10_10hz : entity work.c10ec PORT MAP(rb_i, clk_12M, c100_s, clr_i, q10_s, c10_s); -- 10 Hz
+	Divide_10_1hz : entity work.c10ec PORT MAP(rb_i, clk_12M, c10_s, clr_i, q1_s, c1_s); -- 1 Hz
 	
-	Divide_2 : entity work.c10ec PORT MAP(rb_i, clk_12M, c1_s, cl_i, q2_s, c2_s) -- 1/2 Hz
+	Divide_2 : entity work.c10ec PORT MAP(rb_i, clk_12M, c1_s, clr_i, q2_s, c2_s); -- 1/2 Hz
 	
-	Divide_5 : entity work.c10ec PORT MAP(rb_i, clk_12M, c1_s, cl_i, q5_s, c5_s) -- 1/5 Hz
+	Divide_5 : entity work.c10ec PORT MAP(rb_i, clk_12M, c1_s, clr_i, q5_s, c5_s); -- 1/5 Hz
 	
 	clk_1m_o <= c1K_s;
 	clk_2s_o <= c2_s;
