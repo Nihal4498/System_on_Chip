@@ -1,12 +1,13 @@
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.NUMERIC_STD.ALL;
 -----------------------------------------------------------------------------------------
 
 ENTITY toplevel IS
 	PORT(
 		clk_12M	:	IN STD_LOGIC;
 		rp_i	:	IN STD_LOGIC;
-		led_o	:	OUT STD_LOGIC
+		led_o	:	OUT STD_LOGIC_VECTOR (7 DOWNTO 0)
 	);
 END toplevel;
 
@@ -93,5 +94,6 @@ BEGIN
 			(in1_s, in2_s, clk_12M, rb_s, inv_s, out_s);
 			
 	led_o <= out_s OR showLed_s;
+	--led_o <= std_logic_vector(unsigned(out_s) + unsigned(showLed_s));
 		
 END arch;
