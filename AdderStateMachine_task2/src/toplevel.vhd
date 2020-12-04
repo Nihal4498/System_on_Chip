@@ -78,6 +78,7 @@ ARCHITECTURE arch OF toplevel IS
 
 
 BEGIN
+	
 	clk_gen : entity work.clk_generator PORT MAP 
 				(clk_12M, rb_s, en_s, clr_s, clk_1m_s, clk_2s_s, clk_5s_s);
 				
@@ -94,6 +95,5 @@ BEGIN
 			(in1_s, in2_s, clk_12M, rb_s, inv_s, out_s);
 			
 	led_o <= out_s OR showLed_s;
-	--led_o <= std_logic_vector(unsigned(out_s) + unsigned(showLed_s));
 		
 END arch;

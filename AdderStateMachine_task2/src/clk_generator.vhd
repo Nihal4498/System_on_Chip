@@ -62,9 +62,9 @@ BEGIN
 	Divide_10_10hz : entity work.c10ec PORT MAP(rb_i, clk_12M, c100_s, clr_i, q10_s, c10_s); -- 10 Hz
 	Divide_10_1hz : entity work.c10ec PORT MAP(rb_i, clk_12M, c10_s, clr_i, q1_s, c1_s); -- 1 Hz
 	
-	Divide_2 : entity work.c10ec PORT MAP(rb_i, clk_12M, c1_s, clr_i, q2_s, c2_s); -- 1/2 Hz
+	Divide_2 : entity work.c02ec PORT MAP(rb_i, clk_12M, c1_s, clr_i, q2_s, c2_s); -- 1/2 Hz
 	
-	Divide_5 : entity work.c10ec PORT MAP(rb_i, clk_12M, c1_s, clr_i, q5_s, c5_s); -- 1/5 Hz
+	Divide_5 : entity work.c05ec PORT MAP(rb_i, clk_12M, c1_s, clr_i, q5_s, c5_s); -- 1/5 Hz
 	
 	clk_1m_o <= c1K_s;
 	clk_2s_o <= c2_s;
