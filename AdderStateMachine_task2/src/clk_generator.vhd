@@ -66,8 +66,14 @@ BEGIN
 	
 	Divide_5 : entity work.c05ec PORT MAP(rb_i, clk_12M, c1_s, clr_i, q5_s, c5_s); -- 1/5 Hz
 	
-	clk_1m_o <= c1K_s;
-	clk_2s_o <= c2_s;
-	clk_5s_o <= c5_s;
+	pipeline : PROCESS (clk_12M)
+	BEGIN
+		IF(rising_edge(clk_12M)) THEN
+			clk_1m_o <= c1K_s;
+			clk_2s_o <= c2_s;
+			clk_5s_o <= c5_s;
+		END IF;
+	END PROCESS pipeline;
+	
 
 END arch;
