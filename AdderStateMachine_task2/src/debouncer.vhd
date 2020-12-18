@@ -30,22 +30,22 @@ BEGIN
         ELSIF (cp_i'EVENT AND cp_i='1' AND cp_i'LAST_VALUE='0') THEN
             CASE state_s IS
                 WHEN s0 => IF(clk_1m_i='1' AND clk_2s_i='0' AND rp_i = '1') THEN state_s <= s1; ELSE state_s <= s0; END IF;
-                WHEN s1 => IF(clk_1m_i='1' AND clk_2s_i='0' AND rp_i='1') THEN state_s <= s2; ELSE state_s <= s0; END IF;
-                WHEN s2 => IF(clk_1m_i='1' AND clk_2s_i='0'  AND rp_i='1') THEN state_s <= s3; ELSE state_s <= s0; END IF;
-                WHEN s3 => IF(clk_1m_i='1' AND clk_2s_i='0'  AND rp_i='1') THEN state_s <= s4; ELSE state_s <= s0; END IF;
-                WHEN s4 => IF(clk_1m_i='1' AND clk_2s_i='0'  AND rp_i='1') THEN state_s <= s5; ELSE state_s <= s0; END IF;
-				WHEN s5 => IF(clk_1m_i='1' AND clk_2s_i='0'  AND rp_i='1') THEN state_s <= s6; ELSE state_s <= s0; END IF;
-                WHEN s6 => IF(clk_1m_i='1' AND clk_2s_i='0'  AND rp_i='1') THEN state_s <= s7; ELSE state_s <= s0; END IF;
-                WHEN s7 => IF(clk_1m_i='1' AND clk_2s_i='0'  AND rp_i='1') THEN state_s <= s8; ELSE state_s <= s0; END IF;
-                WHEN s8 => IF(clk_1m_i='1' AND clk_2s_i='0'  AND rp_i='1') THEN state_s <= s9; ELSE state_s <= s0; END IF;
-                WHEN s9 => IF(clk_1m_i='1' AND clk_2s_i='0'  AND rp_i='1') THEN state_s <= s10; ELSE state_s <= s0; END IF;
-				WHEN s10 => IF(clk_1m_i='1' AND clk_2s_i='0' AND rp_i='1') THEN state_s <= s11; ELSE state_s <= s0; END IF;
-                WHEN s11 => IF(clk_1m_i='1' AND clk_2s_i='0' AND rp_i='1') THEN state_s <= s12; ELSE state_s <= s0; END IF;
-                WHEN s12 => IF(clk_1m_i='1' AND clk_2s_i='0' AND rp_i='1') THEN state_s <= s13; ELSE state_s <= s0; END IF;
-                WHEN s13 => IF(clk_1m_i='1' AND clk_2s_i='0' AND rp_i='1') THEN state_s <= s14; ELSE state_s <= s0; END IF;
-                WHEN s14 => IF(clk_1m_i='1' AND clk_2s_i='0' AND rp_i='1') THEN state_s <= s15; ELSE state_s <= s0; END IF;
-                WHEN s15 => IF(clk_2s_i='1') THEN state_s <= s16; ELSE state_s <= s0; END IF;
-				WHEN s16 => IF(rp_i = '0') THEN state_s <= s17; ELSIF(rp_i = '1') THEN state_s <= s18; ELSE state_s <= s0; END IF;
+                WHEN s1 => IF(clk_1m_i='1' AND clk_2s_i='0' AND rp_i='1') THEN state_s <= s2; ELSE state_s <= s1; END IF;
+                WHEN s2 => IF(clk_1m_i='1' AND clk_2s_i='0'  AND rp_i='1') THEN state_s <= s3; ELSE state_s <= s2; END IF;
+                WHEN s3 => IF(clk_1m_i='1' AND clk_2s_i='0'  AND rp_i='1') THEN state_s <= s4; ELSE state_s <= s3; END IF;
+                WHEN s4 => IF(clk_1m_i='1' AND clk_2s_i='0'  AND rp_i='1') THEN state_s <= s5; ELSE state_s <= s4; END IF;
+				WHEN s5 => IF(clk_1m_i='1' AND clk_2s_i='0'  AND rp_i='1') THEN state_s <= s6; ELSE state_s <= s5; END IF;
+                WHEN s6 => IF(clk_1m_i='1' AND clk_2s_i='0'  AND rp_i='1') THEN state_s <= s7; ELSE state_s <= s6; END IF;
+                WHEN s7 => IF(clk_1m_i='1' AND clk_2s_i='0'  AND rp_i='1') THEN state_s <= s8; ELSE state_s <= s7; END IF;
+                WHEN s8 => IF(clk_1m_i='1' AND clk_2s_i='0'  AND rp_i='1') THEN state_s <= s9; ELSE state_s <= s8; END IF;
+                WHEN s9 => IF(clk_1m_i='1' AND clk_2s_i='0'  AND rp_i='1') THEN state_s <= s10; ELSE state_s <= s9; END IF;
+				WHEN s10 => IF(clk_1m_i='1' AND clk_2s_i='0' AND rp_i='1') THEN state_s <= s11; ELSE state_s <= s10; END IF;
+                WHEN s11 => IF(clk_1m_i='1' AND clk_2s_i='0' AND rp_i='1') THEN state_s <= s12; ELSE state_s <= s11; END IF;
+                WHEN s12 => IF(clk_1m_i='1' AND clk_2s_i='0' AND rp_i='1') THEN state_s <= s13; ELSE state_s <= s12; END IF;
+                WHEN s13 => IF(clk_1m_i='1' AND clk_2s_i='0' AND rp_i='1') THEN state_s <= s14; ELSE state_s <= s13; END IF;
+                WHEN s14 => IF(clk_1m_i='1' AND clk_2s_i='0' AND rp_i='1') THEN state_s <= s15; ELSE state_s <= s14; END IF;
+                WHEN s15 => IF(clk_2s_i='1') THEN state_s <= s16; ELSE state_s <= s15; END IF;
+				WHEN s16 => IF(rp_i = '0') THEN state_s <= s17; ELSIF(rp_i = '1') THEN state_s <= s18; ELSE state_s <= s16; END IF;
 				WHEN s17 => state_s <= s0;
 				WHEN s18 => state_s <= s0;
 				WHEN OTHERS => state_s <= s0;
