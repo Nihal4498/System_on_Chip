@@ -1,0 +1,180 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/HRW Materials/Masters/SoC/Project/bitShifting/System_on_Chip/AdderStateMachine_task2/sim
+Eadder_clk
+Z1 w1607080038
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 2
+R0
+Z5 8../src/adder.vhd
+Z6 F../src/adder.vhd
+l0
+L5 1
+VEEHIbZXe>VI>?1J6PnDGN1
+!s100 @76?B=PFOKEX6<gG`;9Ge2
+Z7 OV;C;2020.1;71
+32
+Z8 !s110 1608289467
+!i10b 1
+Z9 !s108 1608289467.000000
+Z10 !s90 -reportprogress|300|-work|work|../src/adder.vhd|
+Z11 !s107 ../src/adder.vhd|
+!i113 1
+Z12 o-work work
+Z13 tExplicit 1 CvgOpt 0
+Aarch
+R2
+R3
+R4
+Z14 DEx4 work 9 adder_clk 0 22 EEHIbZXe>VI>?1J6PnDGN1
+!i122 2
+l15
+L13 14
+V@8gSEnbF`bLRUMCm8RE?a0
+!s100 bzC5lmVbD78ZANjcdaF]a0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Eadder_clk_tb
+Z15 w1608289357
+R3
+R4
+!i122 3
+R0
+Z16 8../tb/adder_tb.vhd
+Z17 F../tb/adder_tb.vhd
+l0
+L4 1
+V36K02MLgEF:TPb@FYUalQ1
+!s100 Ln2>mmH_nXI0ibi]YF:db3
+R7
+32
+Z18 !s110 1608289468
+!i10b 1
+Z19 !s108 1608289468.000000
+Z20 !s90 -reportprogress|300|-work|work|../tb/adder_tb.vhd|
+!s107 ../tb/adder_tb.vhd|
+!i113 1
+R12
+R13
+Aarch
+R2
+R14
+R3
+R4
+DEx4 work 12 adder_clk_tb 0 22 36K02MLgEF:TPb@FYUalQ1
+!i122 3
+l25
+L8 42
+VMml`@l6]H1@ncDkLKA0>Y2
+!s100 89<]g07dMF5KX350Z2DjW0
+R7
+32
+R18
+!i10b 1
+R19
+R20
+Z21 !s107 ../tb/adder_tb.vhd|
+!i113 1
+R12
+R13
+Edebouncer
+Z22 w1608282115
+R3
+R4
+!i122 0
+R0
+Z23 8../src/debouncer.vhd
+Z24 F../src/debouncer.vhd
+l0
+L5 1
+VRo`S@z5D?Oj>:_2n]L_0:3
+!s100 OJ2?QH6`zIH^eKoOGEMb>0
+R7
+32
+Z25 !s110 1608287689
+!i10b 1
+Z26 !s108 1608287689.000000
+Z27 !s90 -reportprogress|300|-work|work|../src/debouncer.vhd|
+Z28 !s107 ../src/debouncer.vhd|
+!i113 1
+R12
+R13
+Aarch
+R3
+R4
+Z29 DEx4 work 9 debouncer 0 22 Ro`S@z5D?Oj>:_2n]L_0:3
+!i122 0
+l25
+L20 135
+VRLna@<R[KbC^Q>zA@Ic?[1
+!s100 W5Q7X^5>>Xc=MPIXTe4]51
+R7
+32
+R25
+!i10b 1
+R26
+R27
+R28
+!i113 1
+R12
+R13
+Etb_debouncer
+Z30 w1608283347
+R3
+R4
+!i122 1
+R0
+Z31 8../tb/tb_debouncer.vhd
+Z32 F../tb/tb_debouncer.vhd
+l0
+L5 1
+VX`LF@_Gb26ABk_MQzP[P:3
+!s100 Z0Kk<6^UAb7Cc1Yodb91E2
+R7
+32
+R25
+!i10b 1
+R26
+Z33 !s90 -reportprogress|300|-work|work|../tb/tb_debouncer.vhd|
+Z34 !s107 ../tb/tb_debouncer.vhd|
+!i113 1
+R12
+R13
+Aarch
+R29
+R3
+R4
+DEx4 work 12 tb_debouncer 0 22 X`LF@_Gb26ABk_MQzP[P:3
+!i122 1
+l36
+L8 77
+Vb`^PSS5TgFOkHU7iiz96?2
+!s100 B1PJWR?79MP3CD>A_zXIa0
+R7
+32
+R25
+!i10b 1
+R26
+R33
+R34
+!i113 1
+R12
+R13

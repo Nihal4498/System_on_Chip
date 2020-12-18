@@ -1,0 +1,44 @@
+do ../script/adder.do
+# compilation started!
+# Library work already exists !!!
+# Compile Toplevel...
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:04:27 on Dec 18,2020
+# vcom -reportprogress 300 -work work ../src/adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity adder_clk
+# -- Compiling architecture arch of adder_clk
+# End time: 12:04:27 on Dec 18,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:04:28 on Dec 18,2020
+# vcom -reportprogress 300 -work work ../tb/adder_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity adder_clk_tb
+# -- Compiling architecture arch of adder_clk_tb
+# -- Loading package NUMERIC_STD
+# -- Loading entity adder_clk
+# End time: 12:04:28 on Dec 18,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# simulation
+# vsim -voptargs="+acc" -t 1ns work.adder_clk_tb 
+# Start time: 12:04:28 on Dec 18,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.adder_clk_tb(arch)
+# Loading work.adder_clk(arch)
+# add wave
+# hexadecimal
+# .main_pane.wave.interior.cs.body.pw.wf
+# testbench run all
+# Break key hit
+# Simulation stop requested.
+# End time: 12:04:47 on Dec 18,2020, Elapsed time: 0:00:19
+# Errors: 0, Warnings: 0
