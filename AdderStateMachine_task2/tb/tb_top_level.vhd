@@ -32,9 +32,20 @@ BEGIN
 	functioning : PROCESS
 	BEGIN
 		rp_s <= '1';
-		WAIT UNTIL rising_edge(clk_12M_s);
-		WAIT UNTIL rising_edge(clk_12M_s);
-		WAIT UNTIL rising_edge(clk_12M_s);
+		for j in 0 to 20 loop
+			WAIT UNTIL rising_edge(clk_12M_s);
+		end loop;
+		
+		for j in 0 to 15 loop
+			rp_s <= '0';
+			
+			wait for 2500 ms;
+			
+			rp_s <= '1';
+			
+			WAIT FOR 1500 ms;
+			
+		end loop;
 		
 		WAIT;
 	END PROCESS functioning;

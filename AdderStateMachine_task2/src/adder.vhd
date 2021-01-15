@@ -11,16 +11,21 @@ port (in_1, in_2: in std_logic_vector (7  downto 0);
 end adder_clk;
 
 architecture arch of adder_clk is
-		
-		begin 
-			process(clk)
-				begin
-					if(rb_i = '0') THEN
-						out_o <= (OTHERS => '0');
-					elsif(rising_edge(clk)) then
-						if ( inv_s = '1') then
-							out_o <= std_logic_vector (unsigned(in_1) + unsigned(in_2));
-						end if;
-					end if;
-			end process;
+	
+	SIGNAL out_s : std_logic_vector (7 downto 0) := (OTHERS => '0');
+	
+begin 
+	process(clk, rb_i)
+		begin
+			if(rb_i = '0') THEN
+				out_s <= (OTHERS => '0');
+			elsif(rising_edge(clk)) then
+				if ( inv_s = '1') then
+					out_s <= std_logic_vector (unsigned(in_1) + unsigned(in_2));
+				else
+					out_s <= out_s;
+				end if;
+			end if;
+	end process;
+	out_o <= out_s;
 end arch;

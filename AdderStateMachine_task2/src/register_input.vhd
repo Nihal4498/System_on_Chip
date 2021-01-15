@@ -53,7 +53,7 @@ BEGIN
 				ELSIF (count >= 8 AND count < 16) THEN
 					showLed <= reg_s(15 DOWNTO 8);
 				ELSE
-					showLed <= "10011001";
+					showLed <= "00000000";
 				END IF;
 								
 				IF(inv_s = '1') THEN

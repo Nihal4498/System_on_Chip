@@ -13,6 +13,7 @@ ARCHITECTURE arch of tb_debouncer IS
 			rb_i 		: 	IN STD_LOGIC;
 			clk_1m_i 	: 	IN STD_LOGIC;
 			clk_2s_i 	: 	IN STD_LOGIC;
+			clk_5s_i 	: 	IN STD_LOGIC;
 			rp_i 		: 	IN STD_LOGIC;
 			sp_o		:	OUT STD_LOGIC;
 			lp_o		:	OUT STD_LOGIC;
@@ -26,6 +27,7 @@ ARCHITECTURE arch of tb_debouncer IS
 	SIGNAL rb_s 		: 	STD_LOGIC;
 	SIGNAL clk_1m_s 	: 	STD_LOGIC;
 	SIGNAL clk_2s_s 	: 	STD_LOGIC;
+	SIGNAL clk_5s_s 	: 	STD_LOGIC;
 	SIGNAL rp_s 		: 	STD_LOGIC;
 	SIGNAL sp_s			:	STD_LOGIC;
 	SIGNAL lp_s			:	STD_LOGIC;
@@ -35,7 +37,7 @@ ARCHITECTURE arch of tb_debouncer IS
 	
 BEGIN
 	dut : entity work.debouncer port map(cp_s, rb_s, clk_1m_s,
-				clk_2s_s, rp_s, sp_s, lp_s, dv_s, clr_s, en_s);
+				clk_2s_s, clk_5s_s,rp_s, sp_s, lp_s, dv_s, clr_s, en_s);
 			
 	clk_12Mhz : PROCESS
 	BEGIN
@@ -47,37 +49,39 @@ BEGIN
 	
 	clk_1KHz : PROCESS
 	BEGIN
-	
 		clk_1m_s <= '0';
 		WAIT FOR 100 ns;
 		clk_1m_s <= '1';
 		WAIT FOR 5 ns;
 	END PROCESS clk_1KHz;
 	
-	clk_2sec : PROCESS
-	BEGIN
-	
-		clk_2s_s <= '0';
-		WAIT FOR 5000 ns;
-		clk_2s_s <= '1';
-		WAIT FOR 5 ns;
-	END PROCESS clk_2sec;
-	
 	functioning : PROCESS
 	BEGIN
 	
 		rb_s <= '1';
-		rp_s <= '0';
-		WAIT UNTIL rising_edge(cp_s);
-		WAIT UNTIL rising_edge(cp_s);
-		WAIT UNTIL rising_edge(cp_s);
-		WAIT UNTIL rising_edge(cp_s);
-		WAIT UNTIL rising_edge(cp_s);
 		rp_s <= '1';
-		for j in 0 to 45 loop
+		clk_2s_s <= '0';
+		clk_5s_s <= '0';
+		WAIT UNTIL rising_edge(clk_1m_s);
+		WAIT UNTIL rising_edge(clk_1m_s);
+		WAIT UNTIL rising_edge(clk_1m_s);
+		WAIT UNTIL rising_edge(clk_1m_s);
+		WAIT UNTIL rising_edge(clk_1m_s);
+		WAIT UNTIL rising_edge(clk_1m_s);
+		rp_s <= '0';
+		for i in 1 to 20 loop
 			WAIT UNTIL rising_edge(clk_1m_s);
 		end loop;
-		rp_s <= '0';
+		rp_s <= '1';
+		for i in 1 to 20 loop
+			WAIT UNTIL rising_edge(clk_1m_s);
+		end loop;
+		clk_2s_s <= '1';
+		WAIT UNTIL rising_edge(cp_s);
+		clk_2s_s <= '0';	
+		
+		
+		
 		
 		WAIT;
 	END PROCESS functioning;

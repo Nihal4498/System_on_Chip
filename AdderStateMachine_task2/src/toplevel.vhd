@@ -39,6 +39,7 @@ ARCHITECTURE arch OF toplevel IS
 			rb_i 		: 	IN STD_LOGIC;
 			clk_1m_i 	: 	IN STD_LOGIC;
 			clk_2s_i 	: 	IN STD_LOGIC;
+			clk_5s_i 	: 	IN STD_LOGIC;
 			rp_i 		: 	IN STD_LOGIC;
 			sp_o		:	OUT STD_LOGIC;
 			lp_o		:	OUT STD_LOGIC;
@@ -86,7 +87,7 @@ BEGIN
 				(clk_12M, clk_5s_s, rb_s);
 				
 	filtering : entity work.debouncer PORT MAP
-				(clk_12M, rb_s, clk_1m_s, clk_2s_s, rp_i, sp_s, lp_s, dv_s, en_s, clr_s);
+				(clk_12M, rb_s, clk_1m_s, clk_2s_s, clk_5s_s, rp_i, sp_s, lp_s, dv_s, en_s, clr_s);
 				
 	Mem	:	entity work.register_input PORT MAP
 			(rb_s, clk_12M, sp_s, lp_s, dv_s, in1_s, in2_s, inv_s, showLed_s);
@@ -94,6 +95,6 @@ BEGIN
 	addition : entity work.adder_clk PORT MAP
 			(in1_s, in2_s, clk_12M, rb_s, inv_s, out_s);
 			
-	led_o <= out_s OR showLed_s;
+	led_o <= showLed_s OR out_s;
 		
 END arch;
