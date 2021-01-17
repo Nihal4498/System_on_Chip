@@ -17,7 +17,7 @@ END register_input;
 ARCHITECTURE arch of register_input IS
 	
 	SIGNAL reg_s : STD_LOGIC_VECTOR(15 DOWNTO 0) := (OTHERS => '0');
-	SIGNAL count : INTEGER range 0 to 16 := 0;
+	SIGNAL count : INTEGER range 0 to 17 := 0;
 	SIGNAL inv_s : STD_LOGIC;
 	
 BEGIN
@@ -26,23 +26,25 @@ BEGIN
 		IF(rb_i = '0') THEN 
 			reg_s <= (OTHERS => '0');
 			count <= 0;
+			inv_s <= '0';
+			showLed <= (OTHERS => '0');
 		ELSE
 			IF(rising_edge(cp_i)) THEN
-				IF(dv_i = '1' AND sp_i = '1' AND lp_i = '0') THEN
+				IF(dv_i = '1' AND sp_i = '1' AND lp_i = '0' AND count <= 15) THEN
 					reg_s(count) <= '1';
 				ELSIF(dv_i = '1' AND sp_i = '0' AND lp_i = '1') THEN
 					reg_s(count) <= '0';
 				END IF;
 				
 				IF (dv_i = '1') THEN
-					IF(count = 15) THEN
+					IF(count = 16) THEN
 						count <= 0;
 					ELSE
 						count <= count + 1;
 					END IF;
 				END IF;
 				
-				IF(count = 15 AND dv_i = '1') THEN
+				IF(count = 16 AND dv_i = '1') THEN
 					inv_s <= '1';
 				ELSE 
 					inv_s <= '0';

@@ -47,6 +47,17 @@ BEGIN
 			
 		end loop;
 		
+		rp_s <= '0';
+			
+		wait for 2500 ms;
+		
+		rp_s <= '1';
+		
+		WAIT FOR 1500 ms;
+		
+		rp_s <= '0';
+		WAIT FOR 6000 ms;
+		
 		WAIT;
 	END PROCESS functioning;
 

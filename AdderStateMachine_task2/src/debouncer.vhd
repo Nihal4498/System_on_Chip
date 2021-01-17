@@ -157,17 +157,21 @@ BEGIN
         ELSIF (rising_edge(cp_i)) THEN
             CASE state2_s IS
                 WHEN s0 => IF(rp_i = '0') THEN state2_s <= s1; ELSE state2_s <= s0; END IF;
-                WHEN s1 => 	IF(clk_2s_i = '1' and rp_i = '1') THEN
+                WHEN s1 => 	IF(clk_2s_i = '1' and rp_i = '0') THEN
 								state2_s <= s3;
-							ELSIF(clk_2s_i = '1' and rp_i = '0') THEN 
+							ELSIF(clk_2s_i = '1' and rp_i = '1') THEN 
 								state2_s <= s2; 
 							ELSE 
 								state2_s <= s1; 
 							END IF;
-				WHEN s2 => if(rp_i = '1') THEN state2_s <= s0; ELSE state2_s <= s2;	END IF;	-- for delay - same as s0 state
-				WHEN s3 => 	IF(clk_5s_i = '1' and rp_i = '0') THEN
+				WHEN s2 => if(rp_i = '1') THEN 
+								state2_s <= s0; 
+							ELSE 
+								state2_s <= s2;	
+							END IF;	-- for delay - same as s0 state
+				WHEN s3 => 	IF(clk_5s_i = '0' and rp_i = '1') THEN
 								state2_s <= s0;
-							ELSIF(rp_i = '1') THEN
+							ELSIF((clk_5s_i = '1' and rp_i = '0') OR (clk_5s_i = '1' and rp_i = '1')) THEN
 								state2_s <= s0;
 							ELSE
 								state2_s <= s3;
@@ -187,8 +191,8 @@ BEGIN
 			WHEN s1 => 	en_s <= '1'; 
 						clr_s <= '0';
 						
-			WHEN s2 => 	en_s <= '0'; 
-						clr_s <= '1';
+			WHEN s2 => 	en_s <= '1'; 
+						clr_s <= '0';
 			
 			WHEN s3 => 	en_s <= '1'; 
 						clr_s <= '0';
